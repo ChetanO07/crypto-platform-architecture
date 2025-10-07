@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Crypto Exchange Architecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">P2P Crypto Exchange Architecture</h1>
+            <div class="header__search">
+                <input type="text" id="search-input" class="search-input" placeholder="Search components or technologies...">
+                <div class="search-filters">
+                    <select id="tech-filter" class="filter-select">
+                        <option value="">All Technologies</option>
+                    </select>
+                    <select id="type-filter" class="filter-select">
+                        <option value="">All Types</option>
+                        <option value="service">Services</option>
+                        <option value="database">Databases</option>
+                        <option value="api">APIs</option>
+                        <option value="blockchain">Blockchain</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar__header">
+                <h3>Architecture Layers</h3>
+            </div>
+            <nav class="layer-nav" id="layer-nav">
+                <!-- Dynamic layer navigation -->
+            </nav>
+
+            <!-- System Metrics Panel -->
+            <div class="metrics-panel">
+                <h4 class="metrics-panel__title">System Metrics</h4>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-value">50K+</span>
+                        <span class="metric-label">Orders/sec</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value">&lt;1ms</span>
+                        <span class="metric-label">Latency</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-value">99.9%</span>
+                        <span class="metric-label">Uptime</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Architecture Visualization -->
+        <main class="architecture-main">
+            <div class="architecture-container">
+                <div class="architecture-layers" id="architecture-layers">
+                    <!-- Dynamic architecture layers -->
+                </div>
+            </div>
+
+            <!-- Flow Visualization Controls -->
+            <div class="flow-controls">
+                <h4>Data Flow Visualization</h4>
+                <div class="flow-buttons">
+                    <button class="btn btn--sm flow-btn" data-flow="registration">User Registration</button>
+                    <button class="btn btn--sm flow-btn" data-flow="trading">Trading Flow</button>
+                    <button class="btn btn--sm flow-btn" data-flow="escrow">Escrow Process</button>
+                    <button class="btn btn--sm flow-btn active" data-flow="none">Clear Flow</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Details Panel -->
+        <aside class="details-panel" id="details-panel">
+            <div class="details-panel__header">
+                <h3>Component Details</h3>
+                <button class="close-btn" id="close-details">&times;</button>
+            </div>
+            <div class="details-panel__content" id="details-content">
+                <div class="welcome-message">
+                    <h4>Welcome to P2P Exchange Architecture</h4>
+                    <p>Click on any component in the architecture diagram to view detailed information about its technology stack, features, and specifications.</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Bottom Tech Stack Overview -->
+    <section class="tech-overview">
+        <div class="container">
+            <h3 class="tech-overview__title">Technology Stack Overview</h3>
+            <div class="tech-categories" id="tech-categories">
+                <!-- Dynamic tech stack categories -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for System Metrics -->
+    <div class="modal hidden" id="metrics-modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>System Performance Metrics</h3>
+                <button class="close-btn" id="close-metrics">&times;</button>
+            </div>
+            <div class="modal__body">
+                <div class="metrics-detailed">
+                    <div class="metrics-section">
+                        <h4>Performance</h4>
+                        <div class="metrics-list">
+                            <div class="metric-item">
+                                <span class="metric-name">Throughput:</span>
+                                <span class="metric-detail">50,000+ orders per second</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-name">Latency:</span>
+                                <span class="metric-detail">&lt;1ms order matching</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-name">Availability:</span>
+                                <span class="metric-detail">99.9% uptime SLA</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-name">Scalability:</span>
+                                <span class="metric-detail">Horizontal auto-scaling</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="metrics-section">
+                        <h4>Security</h4>
+                        <div class="metrics-list">
+                            <div class="metric-item">
+                                <span class="metric-name">Encryption:</span>
+                                <span class="metric-detail">End-to-end AES-256</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-name">Authentication:</span>
+                                <span class="metric-detail">Multi-factor (2FA/MFA)</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-name">Wallets:</span>
+                                <span class="metric-detail">Multi-signature cold storage</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-name">Monitoring:</span>
+                                <span class="metric-detail">24/7 threat detection</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="metrics-section">
+                        <h4>Compliance</h4>
+                        <div class="metrics-list">
+                            <div class="metric-item">
+                                <span class="metric-name">KYC:</span>
+                                <span class="metric-detail">Automated identity verification</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-name">AML:</span>
+                                <span class="metric-detail">Real-time transaction monitoring</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-name">Regulations:</span>
+                                <span class="metric-detail">Global compliance framework</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-name">Audits:</span>
+                                <span class="metric-detail">Regular security assessments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__overlay"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
